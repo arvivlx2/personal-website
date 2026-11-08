@@ -1,281 +1,839 @@
-<!DOCTYPE html><html dir="rtl" lang="he"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0a0e1a;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#7dd3fc", "surface": "#0f1524", "tertiary-container": "#3d2060", "on-surface": "#e0e8f0", "on-secondary": "#001f2e", "inverse-on-surface": "#0a0e1a", "on-tertiary": "#1a002e", "surface-tint": "#7dd3fc", "tertiary": "#c8a0f0", "inverse-primary": "#0a4c6e", "on-error": "#1a0000", "on-secondary-fixed-variant": "#2a4a5e", "on-tertiary-fixed": "#1a002e", "tertiary-fixed": "#e8d0ff", "primary-fixed": "#c8eaff", "secondary-fixed": "#c0d8e8", "on-secondary-fixed": "#0d1f2b", "surface-container-highest": "#202c42", "error-container": "#3d1414", "on-primary": "#001f2e", "inverse-surface": "#e0e8f0", "on-tertiary-container": "#e8d0ff", "secondary-container": "#1a3a4e", "on-error-container": "#ffb3b3", "on-primary-container": "#c8eaff", "background": "#0a0e1a", "surface-dim": "#0f1524", "on-tertiary-fixed-variant": "#4d2a73", "secondary-fixed-dim": "#88b4cc", "secondary": "#88b4cc", "surface-container-low": "#111828", "surface-bright": "#1a2438", "surface-container": "#141c2e", "on-primary-fixed-variant": "#004d73", "error": "#ff6b6b", "surface-container-high": "#1a2438", "primary-fixed-dim": "#7dd3fc", "surface-container-lowest": "#0a0e1a", "on-background": "#e0e8f0", "outline-variant": "#2a3a48", "on-surface-variant": "#a0b4c4", "primary-container": "#0e4d6e", "tertiary-fixed-dim": "#c8a0f0", "on-primary-fixed": "#001f2e", "on-secondary-container": "#c0d8e8", "outline": "#4a6070", "surface-variant": "#1a2438" }, "borderRadius": { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" }, "spacing": {}, "fontFamily": { "headline": ["Inter"], "display": ["Inter"], "body": ["Inter"], "label": ["Inter"] }, "fontSize": {} } } }</script></head><body class="bg-background font-body text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/70 backdrop-blur-2xl shadow-[0_4px_30px_rgba(0,0,0,0.3)]"><div class="h-16 px-4 flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-primary/20 backdrop-blur-md flex items-center justify-center text-primary shadow-[0_0_15px_rgba(125,211,252,0.15)]"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><h1 class="text-base font-semibold tracking-tight text-on-surface leading-tight">Overview</h1><span class="text-[11px] text-on-surface-variant leading-tight">שגרירות ישראל • ניירובי</span></div></div><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-[0_0_15px_rgba(125,211,252,0.25)]"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-background min-h-screen"><div class="flex flex-col w-full text-on-surface select-none pb-8" dir="rtl">
-<!-- Dynamic Ambient Backlight Glows -->
-<div class="relative w-full overflow-hidden px-4 pt-4">
-<div class="absolute -top-16 right-1/4 w-56 h-56 rounded-full bg-primary/15 blur-3xl pointer-events-none"></div>
-<div class="absolute top-48 -left-12 w-64 h-64 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
-<!-- HERO PROFILE CARD -->
-<section class="relative rounded-3xl p-6 bg-surface-container/60 backdrop-blur-2xl shadow-xl overflow-hidden mb-5">
-<!-- Glow rim accent -->
-<div class="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent pointer-events-none"></div>
-<!-- Avatar with Animated Halo Ring -->
-<div class="relative flex flex-col items-center justify-center pt-2">
-<div class="relative group">
-<div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-primary via-tertiary to-primary/40 blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
-<div class="relative w-32 h-32 rounded-full overflow-hidden shadow-2xl p-1 bg-surface-dim/80">
-<img alt="פרופיל" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiUwE0KYx67NyJlfG8llCGiXqixtzVp8BWrtGXyWnh-kghn3SFuxA1EUjy2jWDCrbN-Gl0wFDmf17cxIEb9CSMHubVRY1zriKRCsgvRJHEfNWDTNdXRti9iCIudZcm7suB-_X2fvJLz6DpJdAhFjipLbzOzIAKUZvmzk3Al8mBqDH0orJa5i0jSpm6SpNs7uftut4HrQ8S6TOrx3qdMLRICbwg-VRc8XXFC25oc3bK">
-</div>
-<!-- Verified Diplomatic Pin Badge -->
-<div class="absolute bottom-1 start-1 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-on-primary shadow-lg shadow-primary/30">
-<span class="material-symbols-outlined text-[18px]">verified</span>
-</div>
-</div>
-<!-- Name & Age Header -->
-<div class="mt-4 text-center">
-<div class="flex items-center justify-center gap-2">
-<h2 class="text-2xl font-bold text-on-surface tracking-tight">לירז ארביב</h2>
-<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-primary/20 text-primary">בן 37</span>
-</div>
-<p class="text-xs text-on-surface-variant mt-1 font-medium">Diplomatic Finance Officer &amp; Tech Enthusiast</p>
-</div>
-<!-- Role & Geography Badges -->
-<div class="mt-3.5 flex flex-wrap items-center justify-center gap-2">
-<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-high/80 text-xs text-on-surface font-medium shadow-sm">
-<span class="material-symbols-outlined text-primary text-[17px]">account_balance</span>
-<span class="">מנהל כספים • שגרירות ישראל</span>
-</div>
-<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-high/80 text-xs text-on-surface font-medium shadow-sm">
-<span class="text-sm">🇰🇪</span>
-<span class="">ניירובי</span>
-<span class="text-on-surface-variant text-[10px]">|</span>
-<span class="">ישראל</span>
-<span class="text-sm">🇮🇱</span>
-</div>
-</div>
-<!-- Family Pill Highlight -->
-<div class="mt-3 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-tertiary-container/40 text-on-tertiary-container text-xs font-semibold backdrop-blur-md shadow-sm">
-<span class="">נשוי לסגנית השגריר 💍</span>
-<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
-<span class="text-[11px] opacity-90">שליחות דיפלומטית משותפת</span>
-</div>
-</div>
-</section>
-<!-- CURRENT FOCUS & TECH REVOLUTION -->
-<section class="mb-5">
-<div class="relative rounded-2xl p-5 bg-gradient-to-br from-surface-container-high/90 via-surface-container/75 to-surface-container-high/60 backdrop-blur-2xl shadow-xl overflow-hidden">
-<div class="absolute -top-12 -left-12 w-32 h-32 bg-primary/20 rounded-full blur-2xl pointer-events-none"></div>
-<div class="flex items-start justify-between gap-3 relative z-10">
-<div class="flex items-center gap-2.5">
-<div class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary shadow-inner">
-<span class="material-symbols-outlined text-[22px]">terminal</span>
-</div>
-<div>
-<div class="flex items-center gap-1.5">
-<span class="inline-flex w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="text-[11px] font-semibold text-primary uppercase tracking-wider">מיקוד עכשווי • 2025</span>
-</div>
-<h3 class="text-base font-bold text-on-surface leading-snug">לומד בקורס מפתחי AI מתקדם</h3>
-</div>
-</div>
-<span class="px-2 py-1 rounded-lg bg-primary-container text-on-primary-container text-[11px] font-bold">Deep Learning</span>
-</div>
-<p class="text-xs leading-relaxed text-on-surface-variant mt-3 relative z-10">
-          שילוב סינרגטי בין חשיבה פיננסית קפדנית, רקע הנדסי-ביוטכנולוגי ויישומי בינה מלאכותית מודרניים: מודלים גנרטיביים, אוטומציות חכמות וניתוחי עתק לדיפלומטיה עתידית.
-        </p>
-<!-- Progress Mini Tracker -->
-<div class="mt-4 pt-3.5 border-t border-primary/10 flex items-center justify-between text-xs">
-<div class="flex items-center gap-2 text-on-surface">
-<span class="material-symbols-outlined text-primary text-[16px]">psychology</span>
-<span class="text-xs">Agents &amp; LLMs Engineering</span>
-</div>
-<div class="flex items-center gap-1 text-primary font-semibold text-xs">
-<span class="material-symbols-outlined text-[14px]">bolt</span>
-<span class="">בתנופה מלאה</span>
-</div>
-</div>
-</div>
-</section>
-<!-- PROFESSIONAL & DIPLOMATIC EXPERIENCE -->
-<section class="mb-5">
-<div class="flex items-center justify-between mb-3 px-1">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[20px]">public</span>
-<h3 class="text-sm font-bold text-on-surface tracking-wide">קריירה &amp; שליחות דיפלומטית</h3>
-</div>
-<span class="text-[11px] text-on-surface-variant font-medium">משרד החוץ • קניה</span>
-</div>
-<div class="rounded-2xl p-4 bg-surface-container/60 backdrop-blur-xl shadow-lg">
-<div class="flex items-start gap-3">
-<div class="w-10 h-10 rounded-xl bg-secondary-container flex-shrink-0 flex items-center justify-center text-on-secondary-container mt-0.5">
-<span class="material-symbols-outlined text-[20px]">paid</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between gap-1">
-<h4 class="text-sm font-semibold text-on-surface truncate">מנהל כספים (Head of Finance)</h4>
-<span class="text-[10px] px-2 py-0.5 rounded-full bg-surface-bright text-on-surface-variant font-medium">נוכחי</span>
-</div>
-<p class="text-xs text-primary font-medium mt-0.5">שגרירות ישראל • ניירובי, קניה</p>
-<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
-              ניהול תקציב התפעול הדיפלומטי, הקצאות דו-צדדיות בינלאומיות, בקרת רכש, משא ומתן עם ספקים גלובליים ויישום משילות פיננסית הדוקה בתנאי שטח מורכבים.
-            </p>
-<!-- Metrics Chips -->
-<div class="grid grid-cols-2 gap-2 mt-3 pt-2 border-t border-outline-variant/30">
-<div class="rounded-lg p-2 bg-surface-container-high/60 flex flex-col">
-<span class="text-[10px] text-on-surface-variant">תחום אחריות</span>
-<span class="text-xs font-semibold text-on-surface mt-0.5">תקציב &amp; משאבים</span>
-</div>
-<div class="rounded-lg p-2 bg-surface-container-high/60 flex flex-col">
-<span class="text-[10px] text-on-surface-variant">פוקוס אופרטיבי</span>
-<span class="text-xs font-semibold text-on-surface mt-0.5">בקרה בינלאומית</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ACADEMIC CREDENTIALS & DEGREES -->
-<section class="mb-5">
-<div class="flex items-center justify-between mb-3 px-1">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-tertiary text-[20px]">school</span>
-<h3 class="text-sm font-bold text-on-surface tracking-wide">השכלה אקדמית &amp; תארים</h3>
-</div>
-<span class="text-[11px] text-on-surface-variant font-medium">STEM + Executive</span>
-</div>
-<div class="space-y-2.5">
-<!-- Degree 1: M.Sc. / MBA -->
-<div class="rounded-2xl p-3.5 bg-surface-container/60 backdrop-blur-xl shadow-md flex items-start gap-3">
-<div class="w-10 h-10 rounded-xl bg-tertiary/15 flex-shrink-0 flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between">
-<h4 class="text-sm font-semibold text-on-surface">תואר שני (M.Sc. / MBA)</h4>
-<span class="text-[10px] font-semibold text-tertiary px-2 py-0.5 rounded-full bg-tertiary/10">מוסמך</span>
-</div>
-<p class="text-xs text-on-surface-variant mt-0.5 font-medium">מנהל עסקי ביו-רפואי (Bio-Medical Business Admin)</p>
-<p class="text-[11px] text-on-surface-variant/80 mt-1 leading-normal">
-              אסטרטגיה עסקית לחברות ביומד, הערכת שווי פרויקטים טכנולוגיים וניהול חדשנות רפואית.
-            </p>
-</div>
-</div>
-<!-- Degree 2: B.Sc. -->
-<div class="rounded-2xl p-3.5 bg-surface-container/60 backdrop-blur-xl shadow-md flex items-start gap-3">
-<div class="w-10 h-10 rounded-xl bg-primary/15 flex-shrink-0 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-[20px]">biotech</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between">
-<h4 class="text-sm font-semibold text-on-surface">תואר ראשון (B.Sc.)</h4>
-<span class="text-[10px] font-semibold text-primary px-2 py-0.5 rounded-full bg-primary/10">מהנדס</span>
-</div>
-<p class="text-xs text-on-surface-variant mt-0.5 font-medium">הנדסה פארמצבטית (Pharmaceutical Engineering)</p>
-<p class="text-[11px] text-on-surface-variant/80 mt-1 leading-normal">
-              תשתיות הנדסה מדעיות, תהליכים מולקולריים מתקדמים ופתרון בעיות כמותיות סבוכות.
-            </p>
-</div>
-</div>
-</div>
-</section>
-<!-- LIFE, FAMILY & PASSIONS -->
-<section class="mb-5">
-<div class="flex items-center justify-between mb-3 px-1">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[20px]">favorite</span>
-<h3 class="text-sm font-bold text-on-surface tracking-wide">חיים אישיים &amp; תשוקות</h3>
-</div>
-<span class="text-[11px] text-on-surface-variant font-medium">איזון ושמחת חיים</span>
-</div>
-<!-- Family Status Bar -->
-<div class="rounded-2xl p-3.5 bg-surface-container-high/60 backdrop-blur-md shadow-md mb-3 flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-tertiary-container/60 flex-shrink-0 flex items-center justify-center text-on-tertiary-container">
-<span class="text-lg">🏡</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="text-xs font-bold text-on-surface">נשוי באושר • אב ל-2 ילדים מדהימים</div>
-<div class="text-[11px] text-on-surface-variant mt-0.5 flex items-center gap-1.5">
-<span class="">+ 2 כלבים אהובים ומתוקים</span>
-<span class="">🐾</span>
-<span class="text-primary text-[10px]">• משפחה ברילוקיישן</span>
-</div>
-</div>
-</div>
-<!-- Hobby Grid -->
-<div class="grid grid-cols-1 gap-2.5">
-<!-- Hobby 1: Gaming -->
-<div class="rounded-2xl p-3.5 bg-surface-container/60 backdrop-blur-xl shadow-md flex items-center gap-3 transition-transform active:scale-[0.99]">
-<div class="w-11 h-11 rounded-xl bg-primary/15 flex items-center justify-center text-primary flex-shrink-0">
-<span class="material-symbols-outlined text-[24px]">sports_esports</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between">
-<span class="text-xs font-bold text-on-surface">גיימינג ואסטרטגיה</span>
-<span class="text-[10px] px-2 py-0.5 rounded-full bg-surface-bright text-primary font-medium">RPG &amp; Tactics</span>
-</div>
-<p class="text-[11px] text-on-surface-variant mt-0.5 truncate">משחקי תפקידים מעמיקים, ניהול משאבים ומחשבה טקטית מורכבת</p>
-</div>
-</div>
-<!-- Hobby 2: Sci-Fi Literature -->
-<div class="rounded-2xl p-3.5 bg-surface-container/60 backdrop-blur-xl shadow-md flex items-center gap-3 transition-transform active:scale-[0.99]">
-<div class="w-11 h-11 rounded-xl bg-tertiary/15 flex items-center justify-center text-tertiary flex-shrink-0">
-<span class="material-symbols-outlined text-[24px]">auto_stories</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between">
-<span class="text-xs font-bold text-on-surface">ספרות מדע בדיוני ופנטזיה</span>
-<span class="text-[10px] px-2 py-0.5 rounded-full bg-surface-bright text-tertiary font-medium">Sci-Fi &amp; Fantasy</span>
-</div>
-<p class="text-[11px] text-on-surface-variant mt-0.5 truncate">בניית עולמות עתידניים, ספקולציות טכנולוגיות ויצירות מופת</p>
-</div>
-</div>
-<!-- Hobby 3: Artisan Baking -->
-<div class="rounded-2xl p-3.5 bg-surface-container/60 backdrop-blur-xl shadow-md flex items-center gap-3 transition-transform active:scale-[0.99]">
-<div class="w-11 h-11 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary flex-shrink-0">
-<span class="material-symbols-outlined text-[24px]">bakery_dining</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between">
-<span class="text-xs font-bold text-on-surface">קולינריה ואפייה מדויקת</span>
-<span class="text-[10px] px-2 py-0.5 rounded-full bg-surface-bright text-secondary font-medium">Artisan Bread &amp; Pastry</span>
-</div>
-<p class="text-[11px] text-on-surface-variant mt-0.5 truncate">מחמצות טבעיות, דיוק כימי מושלם של חום ואחוזי הידרציה</p>
-</div>
-</div>
-</div>
-</section>
-<!-- QUICK CONNECT & CONTACT CTA -->
-<section class="mt-2 mb-4">
-<div class="rounded-3xl p-5 bg-gradient-to-t from-surface-container-high/90 via-surface-container/80 to-surface-container-low/70 backdrop-blur-2xl shadow-2xl text-center relative overflow-hidden">
-<div class="absolute -bottom-8 -right-8 w-28 h-28 bg-primary/20 rounded-full blur-2xl pointer-events-none"></div>
-<div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/15 text-primary mb-2">
-<span class="material-symbols-outlined text-[20px]">handshake</span>
-</div>
-<h3 class="text-base font-bold text-on-surface">בואו נדבר וניצור קשר</h3>
-<p class="text-xs text-on-surface-variant max-w-xs mx-auto mt-1 mb-4">
-          פתוח תמיד לשיתופי פעולה בתחומי פיננסים, יוזמות AI, דיפלומטיה טכנולוגית או סתם שיחה על לחמי מחמצת.
-        </p>
-<!-- Social Action Buttons -->
-<div class="grid grid-cols-3 gap-2.5">
-<!-- WhatsApp Button -->
-<a class="flex flex-col items-center justify-center gap-1.5 py-3 px-2 rounded-2xl bg-surface-bright/70 hover:bg-surface-bright text-on-surface shadow-sm transition-all duration-200 active:scale-95 group" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
-<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[18px]">chat</span>
-</div>
-<span class="text-[11px] font-semibold">WhatsApp</span>
-</a>
-<!-- LinkedIn Button -->
-<a class="flex flex-col items-center justify-center gap-1.5 py-3 px-2 rounded-2xl bg-surface-bright/70 hover:bg-surface-bright text-on-surface shadow-sm transition-all duration-200 active:scale-95 group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[18px]">share</span>
-</div>
-<span class="text-[11px] font-semibold">LinkedIn</span>
-</a>
-<!-- Email Button -->
-<a class="flex flex-col items-center justify-center gap-1.5 py-3 px-2 rounded-2xl bg-surface-bright/70 hover:bg-surface-bright text-on-surface shadow-sm transition-all duration-200 active:scale-95 group" href="mailto:yonatan@mfa.gov.il">
-<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[18px]">mail</span>
-</div>
-<span class="text-[11px] font-semibold">אימייל</span>
-</a>
-</div>
-<!-- Quick copy pill feedback -->
-<div class="mt-4 flex items-center justify-center gap-1 text-[11px] text-on-surface-variant/70">
-<span class="material-symbols-outlined text-[13px] text-primary">schedule</span>
-<span class="">זמן מענה ממוצע בניירובי (UTC+3): שעות ספורות</span>
-</div>
-</div>
-</section>
-</div>
-</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/75 backdrop-blur-2xl shadow-[0_-8px_32px_rgba(0,0,0,0.4)]" data-active-classes="text-primary font-semibold relative after:content-[''] after:absolute after:bottom-1 after:w-1.5 after:h-1.5 after:rounded-full after:bg-primary"><div class="flex justify-around items-center h-16 px-2"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 transition-colors text-primary font-semibold relative after:content-[''] after:absolute after:bottom-1 after:w-1.5 after:h-1.5 after:rounded-full after:bg-primary" data-path="overview" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="text-[11px] tracking-tight">סקירה</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="diplomatic-missions" href="#"><span class="material-symbols-outlined text-[22px]">assured_workload</span><span class="text-[11px] tracking-tight">משלחות</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="budget-operations" href="#"><span class="material-symbols-outlined text-[22px]">query_stats</span><span class="text-[11px] tracking-tight">תקציב</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="credentials" href="#"><span class="material-symbols-outlined text-[22px]">badge</span><span class="text-[11px] tracking-tight">תעודות</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-inquiries" href="#"><span class="material-symbols-outlined text-[22px]">mail</span><span class="text-[11px] tracking-tight">קשר</span></a></div></nav>
+<!DOCTYPE html>
 
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary": "#00354a", "surface-container-highest": "#31353e", "tertiary-fixed-dim": "#4cd7f6", "background": "#0f131c", "on-tertiary-container": "#004b58", "surface-tint": "#7bd0ff", "inverse-on-surface": "#2c3039", "on-secondary": "#003824", "secondary-fixed": "#6ffbbe", "primary-container": "#38bdf8", "inverse-primary": "#00668a", "secondary": "#4edea3", "surface-bright": "#353942", "on-secondary-fixed-variant": "#005236", "on-surface-variant": "#bdc8d1", "surface-container-lowest": "#0a0e16", "secondary-container": "#00a572", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed-variant": "#004e5c", "on-secondary-container": "#00311f", "error-container": "#93000a", "on-surface": "#dfe2ee", "primary-fixed-dim": "#7bd0ff", "on-error": "#690005", "surface-container": "#1c2028", "on-primary-fixed-variant": "#004c69", "surface-container-low": "#181c24", "on-primary-container": "#004965", "surface-variant": "#31353e", "on-tertiary": "#003640", "primary-fixed": "#c4e7ff", "inverse-surface": "#dfe2ee", "on-tertiary-fixed": "#001f26", "tertiary-fixed": "#acedff", "on-secondary-fixed": "#002113", "primary": "#8ed5ff", "tertiary": "#54ddfc", "on-background": "#dfe2ee", "error": "#ffb4ab", "outline-variant": "#3e484f", "on-error-container": "#ffdad6", "tertiary-container": "#29c1df", "on-primary-fixed": "#001e2c", "outline": "#87929a", "surface-dim": "#0f131c", "surface-container-high": "#262a33", "surface": "#0f131c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "margin": "3rem", "space-md": "1rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-sm": "1rem" }, fontFamily: { "label-code": ["JetBrains Mono"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-ui": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "code-tech": ["JetBrains Mono"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-code": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-ui": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "code-tech": ["13px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.35)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="LA Monogram Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrBHd3HFjs8WnPtd7dD-uKG_8EbI48_MljRXfzFC0uLxqFuWxdWx9RNjxfnTaBH8Mvg9GAOV5tXY_HxHsF6No8Yjx_ZsChGXG9gUZifc9mHY0wN-zNjPvOMac0qxZXvgYMU_Trq1rL9tlv7jLB25nlYWyXnINYzuVSDRxLzhRKHcjvFDokTNocVJ1V7rfrwScO--sfJpdjPXHXwRyuWjMRTDrHuiREcRKdJ5O4jeJaM"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">Liraz Arviv</span><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0 animate-pulse"></span></div><span class="font-label-code text-label-code text-primary uppercase tracking-wider truncate">Eng &amp; AI Solutions</span></div></div><div class="flex items-center gap-space-xs shrink-0"><a class="hidden min-[380px]:inline-flex items-center justify-center h-9 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-ui text-label-ui transition-colors shadow-sm" data-path="contact" href="#"><span class="material-symbols-outlined text-[16px] mr-1 text-primary">send</span><span>Connect</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqlpNiyOmmGeasG42G1oo7g5uYpiAR5eTa2_-NC1-So0YWztoXMlKmjfVpmhqIG4fh5-1NAPZpyzT_vFL_U1tdpHZirCGsL-yDDtw89rRcPkb1vyGN_aJFEaSN_6-MkAj1SRyyC_bajDAECSnytMzA1zoxOV6hhbS8_OATgvdRtLLGhOiFuYU1ZXnfAzGklVMU1lj3iHo3Nz30YZmb_CJPi2FwTuorODhK0gV3SA"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO -->
+<section class="relative px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-md overflow-hidden">
+<!-- Ambient Technical Glow Overlay -->
+<div class="absolute -top-16 -right-16 w-56 h-56 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-48 h-48 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Live Status Telemetry Pill -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-surface-container-high/90 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0 animate-ping"></span>
+<span class="font-label-code text-label-code text-secondary tracking-wide uppercase">Available for High-Impact Advisory &amp; Custom Eng</span>
+</div>
+<!-- Identity Header: Avatar + Title Lockup -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="relative shrink-0">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container-high shadow-md">
+<img alt="Liraz Arviv Studio Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqlpNiyOmmGeasG42G1oo7g5uYpiAR5eTa2_-NC1-So0YWztoXMlKmjfVpmhqIG4fh5-1NAPZpyzT_vFL_U1tdpHZirCGsL-yDDtw89rRcPkb1vyGN_aJFEaSN_6-MkAj1SRyyC_bajDAECSnytMzA1zoxOV6hhbS8_OATgvdRtLLGhOiFuYU1ZXnfAzGklVMU1lj3iHo3Nz30YZmb_CJPi2FwTuorODhK0gV3SA"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest">Lead Engineer</span>
+<span class="font-label-code text-label-code text-on-surface-variant/40">::</span>
+<span class="font-label-code text-label-code text-tertiary">Sys-v3</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-0.5">Liraz Arviv</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">B.Sc. Pharma Eng · Biomed MBA</p>
+</div>
+</div>
+<!-- Hero Value Statement -->
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight leading-snug">
+        Bridging Process Engineering &amp; <span class="text-primary-container">Applied AI Solutions</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Pharmaceutical Engineer (B.Sc.) &amp; Biomedical MBA, actively building intelligent automations, LLM workflows, and data-driven systems.
+      </p>
+</div>
+<!-- Dual Actions -->
+<div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs">
+<a class="w-full sm:w-auto h-12 px-space-md rounded-xl bg-primary-container text-on-primary-container font-label-ui text-body-md font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" href="#projects">
+<span>View Projects</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="w-full sm:w-auto h-12 px-space-md rounded-xl bg-surface-container-high text-on-surface font-label-ui text-body-md font-medium flex items-center justify-center gap-space-xs shadow-sm transition-all active:scale-[0.98] hover:text-primary" href="https://www.linkedin.com/in/liraz-arviv-6390b14b/" rel="noopener noreferrer" target="_blank">
+<span class="font-label-code text-label-code font-bold px-1.5 py-0.5 rounded bg-surface-container-highest text-primary">in</span>
+<span>Connect on LinkedIn</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">open_in_new</span>
+</a>
+</div>
+<!-- Telemetry Badges / Metrics Row -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col items-center text-center shadow-sm">
+<span class="font-label-code text-label-code text-primary uppercase">Credential</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1 leading-tight">Pharma Eng</span>
+<span class="font-label-code text-label-code text-on-surface-variant/80 mt-0.5">B.Sc. Hon</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col items-center text-center shadow-sm">
+<span class="font-label-code text-label-code text-secondary uppercase">Strategy</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1 leading-tight">Biomed MBA</span>
+<span class="font-label-code text-label-code text-on-surface-variant/80 mt-0.5">Commercial</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col items-center text-center shadow-sm">
+<span class="font-label-code text-label-code text-tertiary uppercase">Compute</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1 leading-tight">LLM Core</span>
+<span class="font-label-code text-label-code text-on-surface-variant/80 mt-0.5">Pipelines</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: PHILOSOPHY & NARRATIVE (ABOUT) -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-space-md bg-surface-container-lowest/60">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest">// 01. PHILOSOPHY &amp; NARRATIVE</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+        Systems Rigor Meets Machine Intelligence
+      </h2>
+</div>
+<!-- Visual Narrative Card -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-md">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        Modern generative AI often fails not from model latency, but from brittle context engineering and loose integration guardrails. My background is rooted in pharmaceutical manufacturing and clinical biotech environments where margins of error approach zero.
+      </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        I combine strict laboratory quality standards (QA/QC, GxP validation, kinetic feedback) with autonomous agent design, structured LLM pipelines, and event-driven webhook architectures. The result: resilient automated systems built to perform consistently in production.
+      </p>
+<!-- Key Engineering Pillars -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Rigorous Scientific Method</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validated protocols, continuous evaluation matrices, and reproducible data flows.</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Production-Grade Fault Tolerance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Robust fallback loops, zero-loss queues, and audited transaction states.</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/20 text-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Rapid AI Prototyping to Scale</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Accelerated transition from exploratory sandbox to mission-critical automation.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CORE COMPETENCIES & TECH STACK -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest">// 02. TECHNICAL ARCHITECTURE</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+        Core Competencies &amp; Stack
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Modular capabilities engineered across computational models, workflow automation, and biomedical domains.
+      </p>
+</div>
+<!-- 4 Cards Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Card A: Applied AI & LLMs -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-sm transition-all hover:bg-surface-container-high">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Applied AI &amp; LLMs</h3>
+</div>
+<span class="font-label-code text-label-code text-primary uppercase px-2 py-0.5 rounded bg-surface-container-highest">Tier 01</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Prompt Architecture, LLM Integrations, Automated Content Generation, Context-Aware Agents, and structured schema validations.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-primary">OpenAI</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-primary">Anthropic</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-primary">Vector RAG</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-primary">Prompt Eng</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-primary">Structured Outputs</span>
+</div>
+</div>
+<!-- Card B: Automation & Architecture -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-sm transition-all hover:bg-surface-container-high">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Automation &amp; Architecture</h3>
+</div>
+<span class="font-label-code text-label-code text-secondary uppercase px-2 py-0.5 rounded bg-surface-container-highest">Tier 02</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          High-throughput Webhooks, REST API connectors, complex multi-branch Make/Integromat scenarios, dynamic queues, and error-handling routines.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-secondary">Make.com</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-secondary">Webhooks</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-secondary">REST APIs</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-secondary">Automation Pipelines</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-secondary">Error Handling</span>
+</div>
+</div>
+<!-- Card C: Engineering & Life Sciences -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-sm transition-all hover:bg-surface-container-high">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Engineering &amp; Life Sciences</h3>
+</div>
+<span class="font-label-code text-label-code text-tertiary uppercase px-2 py-0.5 rounded bg-surface-container-highest">Tier 03</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Process Engineering, Quality Assurance &amp; Quality Control (QA/QC), Scientific Rigor, Laboratory Information Systems, and Biomedical Strategy.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-tertiary">B.Sc. Engineering</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-tertiary">Biomedical MBA</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-tertiary">QA/QC Protocols</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-tertiary">Process Modeling</span>
+</div>
+</div>
+<!-- Card D: Development & Web -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-sm transition-all hover:bg-surface-container-high">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-bright text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Development &amp; Web</h3>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant uppercase px-2 py-0.5 rounded bg-surface-container-highest">Tier 04</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          High-performance Responsive Web Development, Modern Glassmorphism UI, Git/GitHub Versioning, JSON Schemas, and Continuous Integration.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface-variant">JavaScript / TS</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface-variant">Modern Frontend</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface-variant">Git &amp; GitHub</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface-variant">JSON Schemas</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface-variant">CI / CD</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: FEATURED PROJECTS SHOWCASE -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-space-md bg-surface-container-lowest/80" id="projects">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest">// 03. SELECTED SYSTEMS</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+        Featured Projects
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Production-tested automation pipelines and engineered web applications.
+      </p>
+</div>
+<!-- Projects List -->
+<div class="flex flex-col gap-space-md">
+<!-- Project 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-md">
+<!-- Badge & Status -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-secondary/10 text-secondary font-label-code text-label-code font-semibold tracking-wider uppercase">
+            Production Automation
+          </span>
+<span class="flex items-center gap-1 font-label-code text-label-code text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Live System
+          </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+          Autonomous Social Content &amp; Intelligence Engine
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          End-to-end automated platform that monitors real-time RSS feeds and news streams, extracts factual insights, synthesizes narratives using LLM orchestration, and autonomously schedules multi-channel publications.
+        </p>
+<!-- Architecture Breakdown -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/80 flex flex-col gap-1.5">
+<span class="font-label-code text-label-code text-primary uppercase">Architecture Highlights:</span>
+<ul class="flex flex-col gap-1 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+<span>Real-time signal ingestion from RSS/API feeds</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+<span>Contextual LLM summarization with zero hallucination bias</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+<span>Dynamic social copy variations tailored to audience segment</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+<span>Instant webhook dispatch with multi-layer retries</span>
+</li>
+</ul>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface">Make.com</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface">LLM Integration</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface">API Automation</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface">Content Pipeline</span>
+</div>
+<!-- Action CTA -->
+<button class="mt-space-xs h-10 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-ui text-body-sm font-semibold flex items-center justify-between transition-colors shadow-sm cursor-pointer active:scale-[0.98]" onclick="openModal('project1-modal')" type="button">
+<span>Inspect Architecture &amp; Logic</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Project 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-md">
+<!-- Badge & Status -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-code text-label-code font-semibold tracking-wider uppercase">
+            Engineering Web App
+          </span>
+<span class="flex items-center gap-1 font-label-code text-label-code text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Interactive
+          </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+          Process &amp; Data Tracker Web Applications
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Lightweight, interactive web-based tracking and calculation tools engineered for high performance, dynamic calculations, and local data persistence under real-time parameter changes.
+        </p>
+<!-- Architecture Breakdown -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/80 flex flex-col gap-1.5">
+<span class="font-label-code text-label-code text-primary uppercase">Architecture Highlights:</span>
+<ul class="flex flex-col gap-1 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+<span>Instant client-side reactive state management</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+<span>Analytical kinetics &amp; chemical conversion calculators</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+<span>Exportable telemetry metrics with CSV/JSON formatting</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+<span>Zero-latency interface designed for lab-floor tablet use</span>
+</li>
+</ul>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface">JavaScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface">Front-End Architecture</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-code text-label-code text-on-surface">Systems Design</span>
+</div>
+<!-- Interactive Demo Button & Fallback Container -->
+<div class="mt-space-xs flex flex-col gap-space-sm" id="demo-container">
+<button class="h-10 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-ui text-body-sm font-semibold flex items-center justify-between transition-colors shadow-sm cursor-pointer active:scale-[0.98]" onclick="openModal('project2-modal')" type="button">
+<span>Explore Interface Demo</span>
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: BEYOND THE SCREEN (PERSONAL PURSUITS) -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest">// 04. COGNITIVE PASSIONS</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+        Beyond the Screen
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        A systems-thinking mindset applied outside of code and production environments.
+      </p>
+</div>
+<!-- 3 Distinct Feature Cards -->
+<div class="flex flex-col gap-space-sm">
+<!-- 1. Strategic Chess -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0 text-primary shadow-sm">
+<span class="material-symbols-outlined text-[26px]">grid_view</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Strategic Chess</h3>
+<span class="font-label-code text-label-code text-secondary font-bold">TACTICS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+            Advanced tactical planning, risk evaluation, and pattern recognition. Navigating complex decision trees under strict clock constraints.
+          </p>
+</div>
+</div>
+<!-- 2. Fermentation & Precision Baking -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0 text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[26px]">science</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fermentation &amp; Baking</h3>
+<span class="font-label-code text-label-code text-secondary font-bold">RHEOLOGY</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+            The chemistry of fermentation, precise hydration physics, and dough rheology. Microbiological precision meets culinary craft.
+          </p>
+</div>
+</div>
+<!-- 3. Complex Game Systems -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0 text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[26px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Complex Game Systems</h3>
+<span class="font-label-code text-label-code text-tertiary font-bold">ECONOMICS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+            Analyzing intricate mechanics, resource management, and simulated ecosystem dynamics. Deconstructing emergent behavioral loops.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CONTACT & DIRECT COLLABORATION -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-space-md bg-surface-container-lowest/90" id="contact-section">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest">// 05. INITIATE DIALOGUE</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+        Let's Build Something Exceptional
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Available for AI pipeline advisory, custom automation architectures, and biomedical process optimization.
+      </p>
+</div>
+<!-- Contact Cards Grid -->
+<div class="flex flex-col gap-space-xs">
+<!-- Email Card -->
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Email Dispatch</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">arvivlx2@gmail.com</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-ui text-label-ui transition-colors" onclick="navigator.clipboard.writeText('arvivlx2@gmail.com'); this.innerHTML='&lt;span class=\'material-symbols-outlined text-[16px]\'&gt;check&lt;/span&gt;'; setTimeout(() =&gt; this.innerHTML='Copy', 1500);" type="button">
+            Copy
+          </button>
+<a class="h-8 px-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-ui text-label-ui font-semibold flex items-center justify-center shadow-sm" href="mailto:arvivlx2@gmail.com">
+            Mail
+          </a>
+</div>
+</div>
+<!-- LinkedIn Card -->
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="font-label-code text-label-code font-bold text-secondary">in</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">LinkedIn Network</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">liraz-arviv-6390b14b</span>
+</div>
+</div>
+<a class="h-8 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-ui text-label-ui font-semibold flex items-center gap-1 shadow-sm" href="https://www.linkedin.com/in/liraz-arviv-6390b14b/" rel="noopener noreferrer" target="_blank">
+<span>Connect</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+<!-- GitHub Card -->
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface shrink-0">
+<span class="font-label-code text-label-code font-bold">gh</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Code Repositories</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">github.com/arvivlx2</span>
+</div>
+</div>
+<a class="h-8 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-ui text-label-ui font-semibold flex items-center gap-1 shadow-sm" href="https://github.com/arvivlx2" rel="noopener noreferrer" target="_blank">
+<span>Explore</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Direct Inquiry Interactive Form Preview -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm shadow-md mt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Direct Inquiry</span>
+<span class="font-label-code text-label-code text-primary uppercase">Encrypted Dispatch</span>
+</div>
+<form class="flex flex-col gap-space-xs pt-1" onsubmit="event.preventDefault(); const s = document.getElementById('form-status'); s.classList.remove('hidden'); this.reset();">
+<div class="flex flex-col gap-1">
+<label class="font-label-code text-label-code text-on-surface-variant uppercase">Full Name</label>
+<input class="h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/40 outline-none focus:bg-surface-container-high transition-colors" placeholder="e.g. Dr. Julian Vance" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code text-label-code text-on-surface-variant uppercase">Email Address</label>
+<input class="h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/40 outline-none focus:bg-surface-container-high transition-colors" placeholder="julian@biotech-systems.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-code text-label-code text-on-surface-variant uppercase">Project Scope / Challenge</label>
+<textarea class="p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/40 outline-none focus:bg-surface-container-high transition-colors resize-none" placeholder="Outline your automation bottleneck, LLM pipeline requirement, or advisory timeline..." required="" rows="3"></textarea>
+</div>
+<button class="mt-space-xs h-11 w-full rounded-xl bg-primary-container text-on-primary-container font-label-ui text-body-sm font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Send Inquiry</span>
+</button>
+<div class="hidden p-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-body-sm text-body-sm flex items-center gap-space-xs mt-space-xs" id="form-status">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+<span>Message received. Transmission queued for immediate review.</span>
+</div>
+</form>
+</div>
+</section>
+<!-- Interactive script for anchor scrolling -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+          const el = document.querySelector(targetId);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  </script>
+</div><footer class="w-full mt-auto px-margin-mobile pt-space-lg pb-space-md bg-surface-container-lowest/90 backdrop-blur-md"><div class="flex flex-col gap-space-md"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-code text-label-code text-on-surface-variant uppercase tracking-wider">Operational · Available for Strategy</span></div><span class="font-label-code text-label-code text-on-surface-variant/60">v2.4.0</span></div><div class="flex items-center justify-between gap-space-sm pt-space-xs"><div class="flex items-center gap-space-sm"><a aria-label="GitHub Profile" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="https://github.com/arvivlx2" rel="noopener noreferrer" target="_blank"><span class="font-label-code text-label-code font-bold">GH</span></a><a aria-label="LinkedIn Profile" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="https://www.linkedin.com/in/liraz-arviv-6390b14b/" rel="noopener noreferrer" target="_blank"><span class="font-label-code text-label-code font-bold">IN</span></a><a aria-label="Email Address" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="mailto:arvivlx2@gmail.com"><span class="material-symbols-outlined text-[18px]">mail</span></a></div><a class="min-h-[44px] px-space-md flex items-center justify-center rounded-lg bg-primary-container text-on-primary-container font-label-ui text-label-ui font-semibold shadow-sm hover:bg-primary transition-all" data-path="contact" href="#">Get in Touch</a></div><div class="pt-space-xs flex items-center justify-between text-on-surface-variant/50 font-label-code text-label-code"><span>© 2025 Liraz Arviv</span><span>Biopharma × Compute</span></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_16px_rgba(0,0,0,0.45)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 transition-colors text-primary font-semibold" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-ui text-label-ui mt-0.5">About</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="expertise" href="#"><span class="material-symbols-outlined text-[20px]">neurology</span><span class="font-label-ui text-label-ui mt-0.5">Expertise</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#projects"><span class="material-symbols-outlined text-[20px]">terminal</span><span class="font-label-ui text-label-ui mt-0.5">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="interests" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span class="font-label-ui text-label-ui mt-0.5">Interests</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] flex-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#contact-section"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-ui text-label-ui mt-0.5">Contact</span></a></div></nav>
+<!-- MODAL 1: AUTONOMOUS SOCIAL CONTENT & INTELLIGENCE ENGINE SPEC -->
+<div aria-hidden="true" aria-labelledby="modal-p1-title" class="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-background/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 ease-out" id="project1-modal" role="dialog">
+<div class="relative w-full sm:max-w-xl max-h-[90vh] bg-surface-container border border-outline-variant/60 rounded-t-2xl sm:rounded-2xl shadow-2xl flex flex-col overflow-hidden transform translate-y-12 sm:translate-y-4 scale-95 transition-transform duration-300 ease-out">
+<!-- Modal Header -->
+<div class="flex items-center justify-between px-space-md py-3.5 border-b border-outline-variant/40 bg-surface-container-high/60 shrink-0">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse shrink-0"></span>
+<span class="font-label-code text-label-code text-secondary tracking-wider font-semibold uppercase truncate">PRODUCTION PIPELINE • v3.4.1 LIVE</span>
+</div>
+<button aria-label="Close Inspection Modal" class="w-8 h-8 rounded-lg bg-surface-container-highest/80 hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors cursor-pointer" onclick="closeModal('project1-modal')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Modal Scrollable Content -->
+<div class="overflow-y-auto p-space-md flex flex-col gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight" id="modal-p1-title">Autonomous Social Content &amp; Intelligence Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Architectural topology, live runtime telemetry, and validation guardrails.</p>
+</div>
+<!-- ASCII / Diagram Flowchart -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-primary uppercase tracking-wider">Pipeline Flowchart</span>
+<span class="font-label-code text-label-code text-on-surface-variant/70">5 Node Orchestration</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest border border-outline-variant/40 font-code-tech text-[11px] leading-relaxed text-on-surface-variant overflow-x-auto shadow-inner">
+<div class="min-w-[340px] flex flex-col gap-2 py-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-bold">[01 RSS Multi-Feed Ingestion]</span>
+<span class="text-secondary font-bold">──&gt;</span>
+<span class="text-on-surface">Hourly Poll (30 Sources)</span>
+</div>
+<div class="flex items-center gap-2 pl-4">
+<span class="text-outline-variant">│</span>
+<span class="text-secondary font-bold">▼</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-bold">[02 Vector Embed &amp; Deduplication]</span>
+<span class="text-secondary font-bold">──&gt;</span>
+<span class="text-on-surface">Cosine Sim &gt; 0.88 Reject</span>
+</div>
+<div class="flex items-center gap-2 pl-4">
+<span class="text-outline-variant">│</span>
+<span class="text-secondary font-bold">▼</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-bold">[03 Claude 3.5 / GPT-4o Schema Extr.]</span>
+<span class="text-secondary font-bold">──&gt;</span>
+<span class="text-on-surface">Strict JSON Pydantic Cast</span>
+</div>
+<div class="flex items-center gap-2 pl-4">
+<span class="text-outline-variant">│</span>
+<span class="text-secondary font-bold">▼</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-bold">[04 Make.com Webhook Orchestrator]</span>
+<span class="text-secondary font-bold">──&gt;</span>
+<span class="text-on-surface">Error Router + 3x Exponential Backoff</span>
+</div>
+<div class="flex items-center gap-2 pl-4">
+<span class="text-outline-variant">│</span>
+<span class="text-secondary font-bold">▼</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container/30 text-secondary font-bold">[05 Multi-Channel Dispatchers]</span>
+<span class="text-secondary font-bold">──&gt;</span>
+<span class="text-secondary">LinkedIn + X Scheduler APIs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Telemetry & KPI Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<div class="p-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 flex flex-col">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">E2E Latency</span>
+<span class="font-headline-sm text-[16px] text-secondary font-bold mt-0.5">&lt; 1.8s</span>
+<span class="font-label-code text-[10px] text-on-surface-variant/70">p95 benchmark</span>
+</div>
+<div class="p-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 flex flex-col">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">Error Rate</span>
+<span class="font-headline-sm text-[16px] text-primary font-bold mt-0.5">&lt; 0.05%</span>
+<span class="font-label-code text-[10px] text-on-surface-variant/70">Zero loss queue</span>
+</div>
+<div class="p-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 flex flex-col">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">Throughput</span>
+<span class="font-headline-sm text-[16px] text-tertiary font-bold mt-0.5">250+ /hr</span>
+<span class="font-label-code text-[10px] text-on-surface-variant/70">Articles parsed</span>
+</div>
+<div class="p-space-xs px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 flex flex-col">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">Unit Cost</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-bold mt-0.5">$0.0021</span>
+<span class="font-label-code text-[10px] text-on-surface-variant/70">Per generation</span>
+</div>
+</div>
+<!-- Live Mock Execution Console Stream -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface font-medium flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Live Stream Audit Logs
+</span>
+<span class="font-label-code text-[10px] text-secondary">CONNECTED (ID: 0x8F9C)</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest font-code-tech text-[11px] leading-relaxed text-on-surface-variant/90 flex flex-col gap-1 border border-outline-variant/30 max-h-36 overflow-y-auto">
+<div class="flex items-start gap-2">
+<span class="text-on-surface-variant/50 shrink-0">14:02:11.104</span>
+<span class="text-primary shrink-0">[INFO]</span>
+<span class="text-on-surface">RSS Poller: 14 fresh entries pulled from Nature Biotech feed.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-on-surface-variant/50 shrink-0">14:02:11.450</span>
+<span class="text-secondary shrink-0">[DEDUP]</span>
+<span>Embeddings compared. 3 novel papers queued for synthesis.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-on-surface-variant/50 shrink-0">14:02:12.210</span>
+<span class="text-tertiary shrink-0">[MODEL]</span>
+<span>GPT-4o output matches schema. Temperature: 0.25, Tokens: 382.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-on-surface-variant/50 shrink-0">14:02:12.795</span>
+<span class="text-secondary shrink-0">[HOOK]</span>
+<span class="text-secondary">Make.com 200 OK. Social distribution dispatched via API.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer Actions -->
+<div class="p-space-sm sm:px-space-md border-t border-outline-variant/40 bg-surface-container-high/60 flex flex-col-reverse sm:flex-row items-center justify-between gap-2 shrink-0">
+<button class="w-full sm:w-auto h-10 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-ui text-label-ui transition-colors cursor-pointer" onclick="closeModal('project1-modal')" type="button">
+Close Spec
+</button>
+<a class="w-full sm:w-auto h-10 px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-ui text-label-ui font-semibold flex items-center justify-center gap-1.5 shadow-sm hover:bg-primary transition-colors cursor-pointer" href="https://github.com/arvivlx2" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">account_tree</span>
+<span>View Make.com Scenario Blueprint</span>
+</a>
+</div>
+</div>
+</div>
+<!-- MODAL 2: PROCESS & DATA TRACKER WEB APPLICATIONS SPEC & LIVE SIMULATOR -->
+<div aria-hidden="true" aria-labelledby="modal-p2-title" class="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-background/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 ease-out" id="project2-modal" role="dialog">
+<div class="relative w-full sm:max-w-xl max-h-[90vh] bg-surface-container border border-outline-variant/60 rounded-t-2xl sm:rounded-2xl shadow-2xl flex flex-col overflow-hidden transform translate-y-12 sm:translate-y-4 scale-95 transition-transform duration-300 ease-out">
+<!-- Modal Header -->
+<div class="flex items-center justify-between px-space-md py-3.5 border-b border-outline-variant/40 bg-surface-container-high/60 shrink-0">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse shrink-0"></span>
+<span class="font-label-code text-label-code text-primary tracking-wider font-semibold uppercase truncate">REACTIVE CLIENT APP • LAB RUNTIME</span>
+</div>
+<button aria-label="Close Inspection Modal" class="w-8 h-8 rounded-lg bg-surface-container-highest/80 hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors cursor-pointer" onclick="closeModal('project2-modal')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Modal Scrollable Content -->
+<div class="overflow-y-auto p-space-md flex flex-col gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight" id="modal-p2-title">Process &amp; Data Tracker Web Applications</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Biotech reactor kinetics, yield calculations, and offline-first laboratory telemetry.</p>
+</div>
+<!-- Architectural Features Checklist -->
+<div class="p-space-sm rounded-xl bg-surface-container-high/80 border border-outline-variant/40 flex flex-col gap-2">
+<span class="font-label-code text-label-code text-primary uppercase">Lab Runtime Specifications</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-on-surface font-body-sm text-body-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">bolt</span>
+<span>Zero-Latency Signals (Pure JS state updates under 1ms)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">cloud_off</span>
+<span>Offline IndexedDB buffer with automated cloud reconciler</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">verified</span>
+<span>ISO 17025 compliant calculation validation matrix</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">table_chart</span>
+<span>One-click analytical CSV &amp; JSON data telemetry export</span>
+</div>
+</div>
+</div>
+<!-- Live Interactive Simulator Widget Inside Modal -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest border border-primary/20 flex flex-col gap-space-sm shadow-inner">
+<div class="flex items-center justify-between pb-1 border-b border-outline-variant/30">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">Live Reactor Parameter Simulator</span>
+</div>
+<span class="font-label-code text-[11px] text-secondary px-2 py-0.5 rounded bg-secondary/10">Active Sandbox</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Slider 1: Flow Rate -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Flow Feed (L/hr):</span>
+<span class="text-primary font-label-code text-label-code font-bold" id="m-flow-val">150 L/hr</span>
+</div>
+<input class="w-full accent-primary-container cursor-pointer" id="m-flow-input" max="400" min="20" oninput="updateLabSim()" type="range" value="150"/>
+</div>
+<!-- Slider 2: Reaction Temp -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Core Temperature (°C):</span>
+<span class="text-tertiary font-label-code text-label-code font-bold" id="m-temp-val">37.0 °C</span>
+</div>
+<input class="w-full accent-tertiary cursor-pointer" id="m-temp-input" max="45" min="25" oninput="updateLabSim()" step="0.5" type="range" value="37.0"/>
+</div>
+<!-- Slider 3: Substrate Concentration -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Substrate Concentration (g/L):</span>
+<span class="text-secondary font-label-code text-label-code font-bold" id="m-sub-val">24.0 g/L</span>
+</div>
+<input class="w-full accent-secondary cursor-pointer" id="m-sub-input" max="50" min="5" oninput="updateLabSim()" step="1" type="range" value="24"/>
+</div>
+</div>
+<!-- Dynamic Calculation Output Matrix -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="p-2.5 rounded-lg bg-surface-container flex flex-col border border-outline-variant/30">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">Biomass Yield Rate</span>
+<span class="font-headline-sm text-[16px] text-secondary font-bold mt-0.5" id="m-calc-yield">88.4%</span>
+<span class="font-label-code text-[10px] text-secondary/80">Optimal kinetic zone</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex flex-col border border-outline-variant/30">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">Est. 24h Production</span>
+<span class="font-headline-sm text-[16px] text-primary font-bold mt-0.5" id="m-calc-mass">76.3 kg</span>
+<span class="font-label-code text-[10px] text-primary/80">Continuous throughput</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer Actions -->
+<div class="p-space-sm sm:px-space-md border-t border-outline-variant/40 bg-surface-container-high/60 flex flex-col-reverse sm:flex-row items-center justify-between gap-2 shrink-0">
+<button class="w-full sm:w-auto h-10 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-ui text-label-ui transition-colors cursor-pointer" onclick="closeModal('project2-modal')" type="button">
+Close Spec
+</button>
+<button class="w-full sm:w-auto h-10 px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-ui text-label-ui font-semibold flex items-center justify-center gap-1.5 shadow-sm hover:bg-primary transition-colors cursor-pointer" onclick="alert('Launching Live Sandbox Runtime Environment... Demo ready on current panel.');" type="button">
+<span class="material-symbols-outlined text-[16px]">play_circle</span>
+<span>Launch Live Sandbox</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Modal Controller JavaScript -->
+<script>
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    modal.setAttribute('aria-hidden', 'false');
+    const sheet = modal.querySelector('div.relative');
+    if (sheet) {
+      sheet.classList.remove('translate-y-12', 'sm:translate-y-4', 'scale-95');
+      sheet.classList.add('translate-y-0', 'scale-100');
+    }
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+    const sheet = modal.querySelector('div.relative');
+    if (sheet) {
+      sheet.classList.remove('translate-y-0', 'scale-100');
+      sheet.classList.add('translate-y-12', 'sm:translate-y-4', 'scale-95');
+    }
+    modal.classList.remove('opacity-100');
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.add('pointer-events-none');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }, 280);
+  }
+
+  // Dismiss on backdrop click
+  ['project1-modal', 'project2-modal'].forEach(id => {
+    const m = document.getElementById(id);
+    if (m) {
+      m.addEventListener('click', (e) => {
+        if (e.target === m) closeModal(id);
+      });
+    }
+  });
+
+  // Accessible Escape key listener
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeModal('project1-modal');
+      closeModal('project2-modal');
+    }
+  });
+
+  // Live Kinetic Calculator Logic inside Project 2 Modal
+  function updateLabSim() {
+    const flow = parseFloat(document.getElementById('m-flow-input').value) || 150;
+    const temp = parseFloat(document.getElementById('m-temp-input').value) || 37;
+    const sub = parseFloat(document.getElementById('m-sub-input').value) || 24;
+
+    document.getElementById('m-flow-val').innerText = flow + ' L/hr';
+    document.getElementById('m-temp-val').innerText = temp.toFixed(1) + ' °C';
+    document.getElementById('m-sub-val').innerText = sub.toFixed(1) + ' g/L';
+
+    // Kinetic calculation: optimal temp is ~37C
+    const tempFactor = Math.max(0.6, 1 - Math.abs(temp - 37) * 0.04);
+    const yieldPct = (85 * tempFactor * (sub / 25)).toFixed(1);
+    const boundedYield = Math.min(98.8, Math.max(45.0, yieldPct));
+    const dailyMass = ((flow * 24 * sub * (boundedYield / 100)) / 1000).toFixed(1);
+
+    document.getElementById('m-calc-yield').innerText = boundedYield + '%';
+    document.getElementById('m-calc-mass').innerText = dailyMass + ' kg';
+  }
+</script>
 </body></html>
